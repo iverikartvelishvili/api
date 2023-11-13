@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http';
+import { MaybelineComponent } from './maybeline/maybeline.component';
+import { CardComponent } from './card/card.component'
+import { NgxPaginationModule } from 'ngx-pagination'; 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaybelineComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

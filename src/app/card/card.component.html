@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="x.image_link" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{x.price | currency: "USD"}}</h5>
+      <p class="card-text">{{x.description | lowercase}}</p>
+      <a href="#" class="btn btn-primary">{{x.product_type}}</a>
+    </div>
+  </div>
