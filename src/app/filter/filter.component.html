@@ -1,0 +1,11 @@
+<div class="form-group col-md-9 m-auto mt-2">
+<input
+[(ngModel)]="filt.minprice"
+class="form-control mt-2" type="text" placeholder="min price">
+<input
+[(ngModel)]="filt.maxprice"
+class="form-control mt-2" type="text" placeholder="max price">
+<button class="btn btn-warning d-block m-auto mt-2 col-md-6"
+(click)="onFilterPriceChange()"
+>Filter</button>
+</div>

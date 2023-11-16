@@ -1,6 +1,7 @@
+<app-filter (filterEmitter)="onFilterDataChanged($event)"></app-filter>
 <div class="main">
     <app-card
-     *ngFor="let i of arr  | paginate: {itemsPerPage:12,currentPage:page,totalItems:54}"  
+     *ngFor="let i of filteredProducts  | paginate: {itemsPerPage:12,currentPage:page,totalItems:54}"  
     [x]="i">
 </app-card>
 </div>
